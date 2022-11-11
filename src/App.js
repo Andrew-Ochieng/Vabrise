@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-blue-100 lg:mx-64 md:mx-40 mx-8">
       <BrowserRouter>
         <Navbar />
           <Routes>

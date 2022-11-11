@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useRef } from "react";
+import logo from "../assets/logo.png"
 
 const Navbar = () => {
     const menuRef = useRef()
@@ -10,10 +11,12 @@ const Navbar = () => {
 
     return ( 
         <div className="">
-            <nav className='md:py-6 py-4 px-4'>
+            <nav className='md:py-6 py-4'>
                 <div className="navbar md:flex  justify-around items-center " >
                     <div className='flex items-center justify-between'>
-                        <Link to='/' className='md:text-3xl text-2xl uppercase font-semibold '>Vabrise Technologies</Link>
+                        <Link to='/' className='md:text-3xl text-2xl uppercase font-semibold '>
+                            <img className="w-1/6" src={logo} alt="Logo.." />
+                        </Link>
                         <button onClick={showMenu} className="md:hidden">
                             <i className="text-xl fa fa-bars"></i> 
                             {/* <i className="fa fa-times"></i> */}
