@@ -3,7 +3,7 @@ import heroImg from "../assets/hero.png"
 const Hero = () => {
     return ( 
         <>
-            <div className="sm:flex justify-between lg:my-32 md:my-16 my-8">
+            <div className="md:flex justify-between lg:my-32 md:my-16 my-8">
                 <div>
                     <h3 className="uppercase font-medium md:text-lg text-lg text-gray-600">
                         We Manage. You Grow
