@@ -8,7 +8,12 @@ const Blog = () => {
             <div>
                 {loading && <h3>Loading data...</h3>}
                 
+                {/* All Blogs */}
                 <BlogList blogs={blogs} />
+
+                {/* John Doe Blogs */}
+                <BlogList blogTitle="John Doe's Blogs" blogs={blogs.filter(((blog) => blog.author === "John Doe"))} />
+
             </div>
         </>
      );
