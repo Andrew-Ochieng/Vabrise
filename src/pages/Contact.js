@@ -5,8 +5,22 @@ const Contact = () => {
         <>
             <div className="md:flex justify-around md:my-16 my-8 md:pb-24 pb-0">
                 <div>
-                    
+                    <div class="flex flex-col my-8 md:text-2xl text-center text-2xl text-gray-700 space-y-8 ">
+                        <div class="flex flex-col justify-center items-center rounded-lg bg-blue-300 p-8 shadow-lg hover:shadow-2xl">
+                            <i class="py-4 text-black fa fa-phone" aria-hidden="true"></i>
+                            <p class="md:ml-4 ml-2 md:text-xl text-lg">0799874578/ 0710815080</p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center rounded-lg bg-blue-300 p-8 shadow-lg hover:shadow-2xl">
+                            <i class="py-4 text-black fa fa-map-marker" aria-hidden="true"></i>
+                            <p class="md:ml-4 ml-2 md:text-xl text-lg">Nairobi, Kenya</p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center rounded-lg bg-blue-300 p-8 shadow-lg hover:shadow-2xl">
+                            <i class="py-4 text-black fa fa-envelope" aria-hidden="true"></i>
+                            <p class="md:ml-4 ml-2 md:text-xl text-lg">info@vabrise.com</p>
+                        </div>
+                    </div>
                 </div>
+
                 <div className="md:mb-0 mb-16">
                     <ContactForm />
                 </div>
