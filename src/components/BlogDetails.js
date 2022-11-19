@@ -3,13 +3,14 @@ import { useParams } from "react-router-dom";
 
 const BlogDetails = () => {
     const { id } = useParams()
-    const {data: blog, loading} = UseFetch("https://personal-blogsite.herokuapp.com/blogs/" + id)
+    const {data: blog, loading, error} = UseFetch("https://personal-blogsite.herokuapp.com/blogs/" + id)
     
     return ( 
         <>
             <div>
                 <h1 className="text-sm mt-4 mb-2">Blog {id}</h1>
                 {loading && <h3>Loading data...</h3>}
+                { error && <h4 className="text-red-500">{ error }</h4>}
                 {blog && (
                     <div className="flex items-center md:mb-32 mb-16">
                         <article className="">
