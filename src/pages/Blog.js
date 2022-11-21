@@ -13,7 +13,7 @@ const Blog = () => {
                 <BlogList blogs={blogs} />
 
                 {/* John Doe Blogs */}
-                <BlogList blogTitle="John Doe's Blogs" blogs={blogs.filter(((blog) => blog.author === "John Doe"))} />
+                {/* <BlogList blogTitle="John Doe's Blogs" blogs={blogs.filter(((blog) => blog.author === "John Doe"))} /> */}
 
             </div>
         </>
