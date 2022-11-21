@@ -10,19 +10,20 @@ const About = () => {
                     <hr className="border-2 border-green-400 mt-2 md:w-32 w-24"/>
                 </div>
                 <div className="md:flex justify-center items-center">
-                    <div className="w-full">
+                    {/* <div className="w-full"> */}
                         <img className="w-full" src={AboutImg} alt="about" />
-                    </div>
+                    {/* </div> */}
                     <div className="space-y-4 md:text-left text-center">
                         <p>
-                            Vabrise Technologies LTD is a software engineering firm incorporated in Kenya in 2020. 
-                            Our key purpose is to equip the next generation of software engineers that will write a new story of Africa. 
-                            We exist to change the software engineering landscape in Africa.
+                            Vabrise Technologies is a startup ICT Consultncy Firm in Nairobi - Kenya, started in 2020 by passionate 
+                            tech students in Baraton University. With vast experience in what we do, we provide services in 
+                            Computer Repair & Maintainance, Software Design & Development, CCTV & Networks Installation & Maintainance, 
+                            Graphics Design. We also  provide ICT-Based Training in Web Development, UI/ UX Design, Graphics Design, 
+                            CCTV & Network Installation, and Cyber Security.
                         </p>
                         <p>
-                            In the last 4 years, we have been working hard to build the required processes, and 
-                            empower young engineers to build enterprise software products. We have been able to 
-                            serve large enterprises including Banks, Telcos, and many VAS aggregators in Africa.
+                            Our key purpose is to equip the next generation of young engineers with skills that will write a new story of Africa. 
+                            We exist to change the software engineering, design & cyber security landscape in Africa.
                         </p>
                         <div className="flex md:justify-start justify-center items-center">
                             <button className="px-4 py-3 bg-green-500 text-white font-medium rounded-lg mt-4">

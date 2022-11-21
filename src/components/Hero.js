@@ -15,9 +15,9 @@ const Hero = () => {
                         Manage your bussiness without having to worry about the the software solutions you are using. Less hustle more growth.
                     </p>
                 </div>
-                <div>
+                {/* <div> */}
                     <img src={heroImg} alt="Hero section" />
-                </div>
+                {/* </div> */}
                 
             </div>
         </>
