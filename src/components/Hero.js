@@ -9,18 +9,18 @@ const Hero = () => {
                     <h3 className="uppercase font-medium md:text-lg text-lg text-gray-600">
                         We Manage. You Grow
                     </h3>
-                    <h1 className="md:my-6 my-4 md:text-4xl text-2xl font-bold text-gray-800 leading-loose tracking-wide ">
+                    <h1 className="md:my-6 my-4 md:text-5xl text-2xl font-bold text-gray-800 leading-loose tracking-wide ">
                         A Complete solution <br /> to all your tech <br /> such as <br /> 
                         <Typical
-                            className="text-blue-500 font-light md:text-3xl text-2xl"
+                            className="text-blue-500 font-semibold md:pt-4 pt-2 "
                             loop={Infinity}
                             wrapper="p"
                             steps={[
-                                'Computer Repair', 2000, 
-                                'Software Development', 2000,
-                                    'UI/UX Design', 2000,
-                                    'Graphics Design', 2000,
-                                    'CCTV & Network Installation', 2000
+                                'Computer Repair', 3000, 
+                                'Software Development', 3000,
+                                'UI/UX Design', 3000,
+                                'Graphics Design', 3000,
+                                'CCTV & Network Installation', 3000
                             ]}
                         />
                     </h1>
