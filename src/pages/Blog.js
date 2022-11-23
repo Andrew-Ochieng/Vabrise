@@ -2,7 +2,7 @@ import BlogList from "../components/BlogList";
 import UseFetch from "../components/UseFetch";
 
 const Blog = () => {
-    const { data: blogs, loading, error} = UseFetch("https://personal-blogsite.herokuapp.com/blogs")
+    const { data: blogs, loading, error} = UseFetch("https://personal-blogsite.herokuapp.com/blogs/")
     return ( 
         <>
             <div>
