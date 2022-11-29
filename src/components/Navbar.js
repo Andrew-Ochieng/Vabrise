@@ -12,10 +12,10 @@ const Navbar = () => {
     return ( 
         <div className="">
             <nav className='md:py-6 py-4'>
-                <div className="navbar md:flex  justify-around items-center " >
+                <div className="navbar md:flex  justify-between items-center " >
                     <div className='flex items-center justify-between'>
                         <Link to='/' className='md:text-3xl text-2xl uppercase font-semibold '>
-                            <img className="w-1/6" src={logo} alt="Logo.." />
+                            <img className="md:w-32 w-28" src={logo} alt="Logo.." />
                         </Link>
                         <button onClick={showMenu} className="md:hidden">
                             <i className="text-xl fa fa-bars"></i> 

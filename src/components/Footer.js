@@ -4,7 +4,7 @@ const Footer = () => {
     return ( 
         <>
             <footer >
-                <div className="md:flex justify-between text-center md:mb-8 mb-4">
+                <div className="md:flex justify-between text-center md:mb-8 mb-4 md:text-base text-sm">
                     <div>
                         <h1>Vabrise Technologies</h1>
                     </div>
