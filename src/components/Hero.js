@@ -18,8 +18,7 @@ const Hero = () => {
                                     'Graphics Design', 
                                     'CCTV Installation',
                                     'Networks Installation',
-                                    'Cyber Security Training',
-                                    'Software Development'
+                                    'Cyber Security Training'
                                 ]}
                                 loop={5}
                                 cursor
