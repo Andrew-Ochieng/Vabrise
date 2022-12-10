@@ -20,10 +20,10 @@ const Hero = () => {
                                     'Networks Installation',
                                     'Cyber Security Training'
                                 ]}
-                                loop={5}
+                                loop={Infinity}
                                 cursor
                                 cursorStyle='_'
-                                typeSpeed={80}
+                                typeSpeed={100}
                                 deleteSpeed={50}
                                 delaySpeed={2000}
                                 // onLoopDone={handleDone}
