@@ -9,11 +9,12 @@ const Blog = () => {
                 {loading && <h3>Loading data...</h3>}
                 { error && <h4 className="text-red-500">{ error }</h4>}
                 
+                <div className="md:mt-4 mt-2 md:mb-64 mb-32">
+                    <h2 className="text-red-600 text-xl">Blog page coming soon..</h2>
+                </div>
+
                 {/* All Blogs */}
                 <BlogList blogs={blogs} />
-
-                {/* John Doe Blogs */}
-                {/* <BlogList blogTitle="John Doe's Blogs" blogs={blogs.filter(((blog) => blog.author === "John Doe"))} /> */}
 
             </div>
         </>

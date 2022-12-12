@@ -19,7 +19,7 @@ const Footer = () => {
                         </p>
                     </div>
 
-                    <div className="flex text-lg text-gray-900">
+                    <div className="flex justify-center text-lg text-gray-900">
                         <Link to='/'  className="mx-2">
                             <BsGithub />
                         </Link>
