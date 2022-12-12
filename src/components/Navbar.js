@@ -26,7 +26,7 @@ const Navbar = () => {
                     <div ref={menuRef} className="md:flex hidden ">
                         <ul className="md:flex items-center md:text-lg font-medium">
                             <li className='md:mx-8 md:my-0 my-2'>
-                                <Link to='/'>Home</Link>
+                                <Link to='/team'>Team</Link>
                             </li>
                             <li className='md:mx-8 md:my-0 my-2'>
                                 <Link to='/about'>About</Link>
@@ -38,7 +38,7 @@ const Navbar = () => {
                                 <Link to='/blog'>Blog</Link>
                             </li>
                             <li className='md:mx-8 md:my-0 my-2'>
-                                <Link className="border-2 border-green-400 px-4 py-1 hover:bg-green-400 duration-500 hover:text-white rounded-md" to='/contact'>Contact</Link>
+                                <Link className="border-2 bg-green-400 px-4 py-1 hover:bg-green-600 duration-500 hover:text-white rounded-md" to='/contact'>Contact</Link>
                             </li>
                         </ul>
                     </div>
