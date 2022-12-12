@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom";
+import { BsGithub, BsInstagram, BsTwitter, BsLinkedin, BsFacebook } from "react-icons/bs"
+
 
 const Footer = () => {
     return ( 
         <>
             <footer >
-                <div className="md:flex justify-between text-center md:mb-8 mb-4 md:text-base text-sm">
+                <div className="md:flex md:justify-between justify-center items-center  text-center mb-8 md:text-base text-sm">
                     <div>
                         <h1>Vabrise Technologies</h1>
                     </div>
 
-                    <div>
+                    <div className="md:my-0 my-2">
                         <p>Copyright &copy; 2022 |  
                             <Link to='/'> 
                                | Vabrise Technologies
@@ -17,21 +19,21 @@ const Footer = () => {
                         </p>
                     </div>
 
-                    <div className="space-x-4">
-                        <Link to='/'>
-                            <i className="text-lg text-gray-900 fa fa-github"></i>
+                    <div className="flex text-lg text-gray-900">
+                        <Link to='/'  className="mx-2">
+                            <BsGithub />
                         </Link>
-                        <Link to='/'>
-                            <i className="text-lg text-gray-900 fa fa-twitter"></i>
+                        <Link to='/'  className="mx-2">
+                            <BsFacebook />
                         </Link>
-                        <Link to='/'>
-                            <i className="text-lg text-gray-900 fa fa-linkedin"></i>
+                        <Link to='/'  className="mx-2">
+                            <BsInstagram />
                         </Link>
-                        <Link to='/'>
-                            <i className="text-lg text-gray-900 fa fa-telegram"></i>
+                        <Link to='/'  className="mx-2">
+                            <BsTwitter />
                         </Link>
-                        <Link to='/'>
-                            <i className="text-lg text-gray-900 fa fa-dribbble"></i>
+                        <Link to='/'  className="mx-2">
+                            <BsLinkedin />
                         </Link>
                     </div>
                 </div>
