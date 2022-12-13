@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useRef } from "react";
+import { FaBars } from "react-icons/fa"
 import logo from "../assets/logo.png"
 
 const Navbar = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
                             <img className="md:w-32 w-28" src={logo} alt="Logo.." />
                         </Link>
                         <button onClick={showMenu} className="md:hidden">
-                            <i className="text-xl fa fa-bars"></i> 
+                            <FaBars />
                             {/* <i className="fa fa-times"></i> */}
                         </button>
                     </div>
