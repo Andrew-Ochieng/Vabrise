@@ -10,7 +10,7 @@ const Blog = () => {
                 { error && <h4 className="text-red-500">{ error }</h4>}
                 
                 <div className="md:mt-8 mt-4">
-                    <h2 className="text-red-600 text-xl">Blog page coming soon..</h2>
+                    <h2 className="text-green-500 md:text-2xl text-xl font-semibold">Tech Blogs</h2>
                 </div>
 
                 {/* All Blogs */}

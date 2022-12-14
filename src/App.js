@@ -13,7 +13,7 @@ import UseFetch from "./components/UseFetch";
 
 function App() {
   const { data: blogs, loading } = UseFetch("https://vabrise-blog-production.up.railway.app/posts")
-  console.log(blogs)
+  // console.log(blogs)
   
   return (
     <div className="App bg-blue-100 lg:mx-64 md:mx-40 mx-8">

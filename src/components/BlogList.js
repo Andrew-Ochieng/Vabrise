@@ -10,7 +10,7 @@ const BlogList = ({blogs, blogTitle}) => {
 
             <div className="grid sm:grid-cols-3 md:gap-12 sm:gap-6 md:mb-24 mb-12">
                 {blogs.map((blog) => (
-                    <div key={blog.id} className="bg-blue-300 p-4 rounded-lg my-4 shadow-lg hover:shadow-xl hover:translate-x-1 hover:scale-105 duration-500">
+                    <div key={blog.id} className="bg-blue-300 p-4 rounded-lg my-4 shadow-lg hover:shadow-xl hover:translate-x-1 hover:scale-95 duration-500">
                         <img className="rounded-lg w-full" src={blog.image_url} alt="" />
                         <Link to={`/${blog.id}`} className="m-2 ">
                             <p className="py-1 text-sm text-gray-600">Created at: 
