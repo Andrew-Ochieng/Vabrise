@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 const BlogDetails = () => {
     const { id } = useParams()
-    const {data: blog, loading, error} = UseFetch("https://personal-blogsite.herokuapp.com/blogs/" + id)
+    const {data: blog, loading, error} = UseFetch("http://localhost:3000/posts/" + id)
     
     return ( 
         <>
@@ -15,9 +15,11 @@ const BlogDetails = () => {
                     <div className="flex items-center md:mb-32 mb-16">
                         <article className="">
                             <h2 className="font-semibold md:text-3xl text-xl">{blog.title}</h2>
-                            <p className="text-xl text-blue-500 font-medium">Written by {blog.author}</p>
-                            <img className="my-4 w-full" src={blog.imageUrl} alt="Details images here..." />
-                            <div className="text-lg text-gray-800">{blog.body}</div>
+                            <p className="text-xl text-blue-500 font-medium my-2">Written by 
+                                <span className="text-green-500 ">{blog.author.firstname} {blog.author.lastname}</span>
+                            </p>
+                            <img className="my-4 w-full" src={blog.image_url} alt="Details images here..." />
+                            <div className="text-lg text-gray-800">{blog.content}</div>
                         </article>
                     </div>
                 )}

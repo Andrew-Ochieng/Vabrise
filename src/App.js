@@ -12,8 +12,9 @@ import UseFetch from "./components/UseFetch";
 
 
 function App() {
-  const { data: blogs, loading } = UseFetch("https://personal-blogsite.herokuapp.com/blogs")
-
+  const { data: blogs, loading } = UseFetch("http://localhost:3000/posts")
+  console.log(blogs)
+  
   return (
     <div className="App bg-blue-100 lg:mx-64 md:mx-40 mx-8">
       <BrowserRouter>

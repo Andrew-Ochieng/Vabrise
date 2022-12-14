@@ -2,14 +2,14 @@ import BlogList from "../components/BlogList";
 import UseFetch from "../components/UseFetch";
 
 const Blog = () => {
-    const { data: blogs, loading, error} = UseFetch("https://personal-blogsite.herokuapp.com/blogs/")
+    const { data: blogs, loading, error} = UseFetch("http://localhost:3000/posts/")
     return ( 
         <>
             <div>
                 {loading && <h3>Loading data...</h3>}
                 { error && <h4 className="text-red-500">{ error }</h4>}
                 
-                <div className="md:mt-4 mt-2 md:mb-64 mb-32">
+                <div className="md:mt-8 mt-4">
                     <h2 className="text-red-600 text-xl">Blog page coming soon..</h2>
                 </div>
 
