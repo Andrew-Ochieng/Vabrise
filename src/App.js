@@ -12,7 +12,7 @@ import UseFetch from "./components/UseFetch";
 
 
 function App() {
-  const { data: blogs, loading } = UseFetch("http://localhost:3000/posts")
+  const { data: blogs, loading } = UseFetch("https://vabrise-blog-production.up.railway.app/posts")
   console.log(blogs)
   
   return (

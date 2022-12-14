@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 const BlogDetails = () => {
     const { id } = useParams()
-    const {data: blog, loading, error} = UseFetch("http://localhost:3000/posts/" + id)
+    const {data: blog, loading, error} = UseFetch("https://vabrise-blog-production.up.railway.app/posts/" + id)
     
     return ( 
         <>

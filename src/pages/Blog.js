@@ -2,7 +2,7 @@ import BlogList from "../components/BlogList";
 import UseFetch from "../components/UseFetch";
 
 const Blog = () => {
-    const { data: blogs, loading, error} = UseFetch("http://localhost:3000/posts/")
+    const { data: blogs, loading, error} = UseFetch("https://vabrise-blog-production.up.railway.app/posts/")
     return ( 
         <>
             <div>
