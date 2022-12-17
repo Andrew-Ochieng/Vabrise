@@ -7,9 +7,22 @@ const ServiceItem = () => {
             <div className="grid sm:grid-cols-2 md:grid-cols-3 md:gap-16 gap-8">
                 {services.map((service) => (
                     <motion.div 
-                        animate={{y: 100, scale: 1}}
-                        initial={{scale: 0, opacity: 0}}
+                        animate={{ scale: 1, opacity: 1}}
+                        initial={{scale: 0.5, opacity: 0}}
                         whileInView={{ opacity: 1 }}
+                        whileHover={{ scale: 1.1 }}
+                        transition={{
+                            default: {
+                              duration: 0.3,
+                              ease: [0, 0.80, 0.2, 0.80]
+                            },
+                            scale: {
+                              type: "spring",
+                              damping: 7,
+                              stiffness: 100,
+                              restDelta: 0.001
+                            }
+                          }}
                         className="" 
                         key={service.id}>
                         <img src={service.path} alt="services" className="w-full"/>

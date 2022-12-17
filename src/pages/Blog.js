@@ -6,7 +6,7 @@ const Blog = () => {
     return ( 
         <>
             <div>
-                {loading && <h3>Loading data...</h3>}
+                {loading && <h3 className="text-green-500">Loading data...</h3>}
                 { error && <h4 className="text-red-500">{ error }</h4>}
                 
                 <div className="md:mt-8 mt-4">
