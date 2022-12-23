@@ -1,7 +1,12 @@
+import { useState } from "react";
 import AboutImg from "../assets/hero1.png";
+import AboutModal from "../components/AboutModal";
 import CoreValues from "../components/CoreValues";
 
 const About = () => {
+    const [isOpen, setIsOpen] = useState(false)
+
+
     return ( 
         <>
             <div className="h-full">
@@ -26,11 +31,15 @@ const About = () => {
                             We exist to change the software engineering, design & cyber security landscape in Africa.
                         </p>
                         <div className="flex md:justify-start justify-center items-center">
-                            <button className="px-4 py-3 bg-green-500 text-white font-medium rounded-lg mt-4">
+                            <button 
+                                onClick={() => setIsOpen(true)} 
+                                className="px-4 py-3 bg-green-500 text-white font-medium rounded-lg mt-4"
+                                >
                                 The Back Story
                             </button>
                         </div>
                     </div>
+                    <AboutModal isOpen={isOpen} setIsOpen={setIsOpen} />
                 </div>
                 
                 <CoreValues title="Core Values" />
