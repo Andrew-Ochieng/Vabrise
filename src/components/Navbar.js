@@ -21,13 +21,13 @@ const Navbar = () => {
                         
                         <ul className="md:flex items-center md:text-lg font-medium hidden">
                             <li className='md:mx-8 md:my-0 my-2'>
+                                <Link to='/'>Home</Link>
+                            </li>
+                            <li className='md:mx-8 md:my-0 my-2'>
                                 <Link to='/about'>About</Link>
                             </li>
                             <li className='md:mx-8 md:my-0 my-2'>
                                 <Link to='/services'>Services</Link>
-                            </li>
-                            <li className='md:mx-8 md:my-0 my-2'>
-                                <Link to='/blog'>Blog</Link>
                             </li>
                             <li className='md:mx-8 md:my-0 my-2'>
                                 <Link className="border-2 bg-green-400 px-4 py-1 hover:bg-green-600 duration-500 hover:text-white rounded-md" to='/contact'>Contact</Link>
@@ -42,16 +42,16 @@ const Navbar = () => {
                     <div ref={menuRef} className="md:hidden block">
                         <ul className="md:text-lg font-medium">
                             <li className='md:mx-8 md:my-0 my-2'>
-                                <Link to='/about'>About</Link>
+                              <Link to='/'>Home</Link>
                             </li>
                             <li className='md:mx-8 md:my-0 my-2'>
-                                <Link to='/services'>Services</Link>
+                              <Link to='/about'>About</Link>
                             </li>
                             <li className='md:mx-8 md:my-0 my-2'>
-                                <Link to='/blog'>Blog</Link>
+                              <Link to='/services'>Services</Link>
                             </li>
                             <li className='md:mx-8 md:my-0 my-2'>
-                                <Link className="border-2 bg-green-400 px-4 py-1 hover:bg-green-600 duration-500 hover:text-white rounded-md" to='/contact'>Contact</Link>
+                              <Link className="border-2 bg-green-400 px-4 py-1 hover:bg-green-600 duration-500 hover:text-white rounded-md" to='/contact'>Contact</Link>
                             </li>
                         </ul>
                     </div>

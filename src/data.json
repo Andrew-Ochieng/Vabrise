@@ -1,52 +1,44 @@
-{
-    "services": [
-        {
-            "title": "Web Development",
-            "subtitle": "We create complex moblie based applications, ensure reliable software integration, modernise and maintain your legacy system.",
-            "path": "https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?w=1380&t=st=1671257706~exp=1671258306~hmac=9b387c419bf7d17153e59661a1cf35119d9ce8b9477a7e6f2831ca1773cf7098",
-            "content": "At Vabrise Technologies, we develop mobile apps for clients all around the world. Our highly skilled developers offer several mobile app development services. We are one of the few mobile application development companies, who develop several types of mobile apps, like business apps, games apps, financial apps, etc."
-    
-        },
-        {
-            "title": "Mobile App Development",
-            "subtitle": "We create complex moblie based applications, ensure reliable software integration, modernise and maintain your legacy system.",
-            "path": "https://img.freepik.com/free-vector/mobile-testing-concept-illustration_114360-1564.jpg?w=1380&t=st=1671257989~exp=1671258589~hmac=c61add386e710ee1f0bf4885ce8425f4add3ee1074b037b78c4ff32d95e04ce9",
-            "content": "At Vabrise Technologies, we develop mobile apps for clients all around the world. Our highly skilled developers offer several mobile app development services. We are one of the few mobile application development companies, who develop several types of mobile apps, like business apps, games apps, financial apps, etc."
-    
-        },
-        {
-            "title": "Graphics Design",
-            "subtitle": "We create complex moblie based applications, ensure reliable software integration, modernise and maintain your legacy system.",
-            "path": "https://img.freepik.com/free-vector/tiny-graphic-designer-drawing-with-big-pen-computer-screen-creators-work-creative-woman-working-laptop-flat-vector-illustration-digital-design-concept-banner-landing-web-page_74855-25342.jpg?w=996&t=st=1671258138~exp=1671258738~hmac=f35778fe0a0d88c3e5be0e7365e4b5c98da9df2e9a536440ff9a3a1e9b22b8b3",
-            "content": "At Vabrise Technologies, we develop mobile apps for clients all around the world. Our highly skilled developers offer several mobile app development services. We are one of the few mobile application development companies, who develop several types of mobile apps, like business apps, games apps, financial apps, etc."
-    
-        },
-        {
-            "title": "Computer Repair Services",
-            "subtitle": "We create complex moblie based applications, ensure reliable software integration, modernise and maintain your legacy system.",
-            "path": "https://img.freepik.com/free-vector/computer-repair-support-service-isometric-illustration_1284-57663.jpg?t=st=1671258397~exp=1671258997~hmac=f9f85c37b754ce57354092d5b789f25d26b620eaad790b0482b9aa4543d71d02",
-            "content": "At Vabrise Technologies, we develop mobile apps for clients all around the world. Our highly skilled developers offer several mobile app development services. We are one of the few mobile application development companies, who develop several types of mobile apps, like business apps, games apps, financial apps, etc."
-    
-        },
-        {
-            "title": "Cyber Security",
-            "subtitle": "We create complex moblie based applications, ensure reliable software integration, modernise and maintain your legacy system.",
-            "path": "https://img.freepik.com/free-vector/global-data-security-personal-data-security-cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection_1150-37373.jpg?w=996&t=st=1671258585~exp=1671259185~hmac=c80ba5af89a8b10cf4976bb716539e077758dd2f8e089eed236aa854158cfade",
-            "content": "At Vabrise Technologies, we develop mobile apps for clients all around the world. Our highly skilled developers offer several mobile app development services. We are one of the few mobile application development companies, who develop several types of mobile apps, like business apps, games apps, financial apps, etc."
-    
-        },
-        {
-            "title": "Technical Training",
-            "subtitle": "We create complex moblie based applications, ensure reliable software integration, modernise and maintain your legacy system.",
-            "path": "https://img.freepik.com/free-vector/software-development-programming-coding-learning_335657-3118.jpg?w=1380&t=st=1671258816~exp=1671259416~hmac=a8d59666a836f500a8b81a8fa62bfcdc321668c1804bed1fa92384d699f31129",
-            "content": "At Vabrise Technologies, we develop mobile apps for clients all around the world. Our highly skilled developers offer several mobile app development services. We are one of the few mobile application development companies, who develop several types of mobile apps, like business apps, games apps, financial apps, etc."
-    
-        }
-    ],
+[
+    {
+        "title": "Web Development",
+        "subtitle": "We create complex moblie based applications, ensure reliable software integration, modernise and maintain your legacy system.",
+        "path": "https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?w=1380&t=st=1671257706~exp=1671258306~hmac=9b387c419bf7d17153e59661a1cf35119d9ce8b9477a7e6f2831ca1773cf7098",
+        "content": "At Vabrise Technologies, we develop mobile apps for clients all around the world. Our highly skilled developers offer several mobile app development services. We are one of the few mobile application development companies, who develop several types of mobile apps, like business apps, games apps, financial apps, etc."
 
-    "about": [
-        {
-            "name": "Christopher Khayere"
-        }
-    ]
-}
+    },
+    {
+        "title": "Mobile App Development",
+        "subtitle": "We create complex moblie based applications, ensure reliable software integration, modernise and maintain your legacy system.",
+        "path": "https://img.freepik.com/free-vector/mobile-testing-concept-illustration_114360-1564.jpg?w=1380&t=st=1671257989~exp=1671258589~hmac=c61add386e710ee1f0bf4885ce8425f4add3ee1074b037b78c4ff32d95e04ce9",
+        "content": "At Vabrise Technologies, we develop mobile apps for clients all around the world. Our highly skilled developers offer several mobile app development services. We are one of the few mobile application development companies, who develop several types of mobile apps, like business apps, games apps, financial apps, etc."
+
+    },
+    {
+        "title": "Graphics Design",
+        "subtitle": "We create complex moblie based applications, ensure reliable software integration, modernise and maintain your legacy system.",
+        "path": "https://img.freepik.com/free-vector/tiny-graphic-designer-drawing-with-big-pen-computer-screen-creators-work-creative-woman-working-laptop-flat-vector-illustration-digital-design-concept-banner-landing-web-page_74855-25342.jpg?w=996&t=st=1671258138~exp=1671258738~hmac=f35778fe0a0d88c3e5be0e7365e4b5c98da9df2e9a536440ff9a3a1e9b22b8b3",
+        "content": "At Vabrise Technologies, we develop mobile apps for clients all around the world. Our highly skilled developers offer several mobile app development services. We are one of the few mobile application development companies, who develop several types of mobile apps, like business apps, games apps, financial apps, etc."
+
+    },
+    {
+        "title": "Computer Repair Services",
+        "subtitle": "We create complex moblie based applications, ensure reliable software integration, modernise and maintain your legacy system.",
+        "path": "https://img.freepik.com/free-vector/computer-repair-support-service-isometric-illustration_1284-57663.jpg?t=st=1671258397~exp=1671258997~hmac=f9f85c37b754ce57354092d5b789f25d26b620eaad790b0482b9aa4543d71d02",
+        "content": "At Vabrise Technologies, we develop mobile apps for clients all around the world. Our highly skilled developers offer several mobile app development services. We are one of the few mobile application development companies, who develop several types of mobile apps, like business apps, games apps, financial apps, etc."
+
+    },
+    {
+        "title": "Cyber Security",
+        "subtitle": "We create complex moblie based applications, ensure reliable software integration, modernise and maintain your legacy system.",
+        "path": "https://img.freepik.com/free-vector/global-data-security-personal-data-security-cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection_1150-37373.jpg?w=996&t=st=1671258585~exp=1671259185~hmac=c80ba5af89a8b10cf4976bb716539e077758dd2f8e089eed236aa854158cfade",
+        "content": "At Vabrise Technologies, we develop mobile apps for clients all around the world. Our highly skilled developers offer several mobile app development services. We are one of the few mobile application development companies, who develop several types of mobile apps, like business apps, games apps, financial apps, etc."
+
+    },
+    {
+        "title": "Technical Training",
+        "subtitle": "We create complex moblie based applications, ensure reliable software integration, modernise and maintain your legacy system.",
+        "path": "https://img.freepik.com/free-vector/software-development-programming-coding-learning_335657-3118.jpg?w=1380&t=st=1671258816~exp=1671259416~hmac=a8d59666a836f500a8b81a8fa62bfcdc321668c1804bed1fa92384d699f31129",
+        "content": "At Vabrise Technologies, we develop mobile apps for clients all around the world. Our highly skilled developers offer several mobile app development services. We are one of the few mobile application development companies, who develop several types of mobile apps, like business apps, games apps, financial apps, etc."
+
+    }
+]

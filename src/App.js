@@ -5,14 +5,14 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
-import Blog from "./pages/Blog";
-import BlogDetails from "./components/BlogDetails";
-import UseFetch from "./components/UseFetch";
+// import Blog from "./pages/Blog";
+// import BlogDetails from "./components/BlogDetails";
+// import UseFetch from "./components/UseFetch";
 
 
 
 function App() {
-  const { data: blogs, loading } = UseFetch("https://vabrise-blog-production.up.railway.app/posts")
+  // const { data: blogs, loading } = UseFetch("https://vabrise-blog-production.up.railway.app/posts")
   // console.log(blogs)
   
   return (
@@ -23,8 +23,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
-            <Route path="blog" element={<Blog />} />
-            <Route path="/:id" element={<BlogDetails blogs={blogs} loading={loading} />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         <Footer />
