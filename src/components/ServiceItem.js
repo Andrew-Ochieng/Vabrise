@@ -2,6 +2,7 @@ import services from "../data.json"
 import { motion } from "framer-motion";
 
 const ServiceItem = () => {
+  
     return ( 
         <>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 md:gap-16 gap-8">

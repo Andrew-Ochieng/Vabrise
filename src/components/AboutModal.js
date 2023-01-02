@@ -4,16 +4,16 @@ const AboutModal = ({isOpen, setIsOpen}) => {
     if (!isOpen) return null;
 
     return ( 
-        <div className="fixed inset-0 lg:px-80 sm:px-8 md:px-16 px-4 bg-gray-800 bg-opacity-30 flex items-center justify-center backdrop-blur-sm duration-500">
+        <div className="fixed inset-0 lg:px-80 sm:px-8 md:px-16 px-4 md:y-0 py-16 bg-gray-800 bg-opacity-30 flex items-center justify-center backdrop-blur-sm duration-500">
             <div className=" rounded-lg">
-                <div className='py-2 px-2 rounded-lg'>
+                <div className='py-2 px-2 rounded-lg flex items-center justify-end'>
                     <RiCloseCircleFill 
                         onClick={() => setIsOpen(false)}
-                        className='text-xl flex items-center justify-start-right cursor-pointer'
+                        className='md:text-2xl text-xl cursor-pointer'
                         />
                 </div>
                 <hr className='text-gray-800 border-1.5 border-gray-500' />
-                <div className='mx-3 my-8 md:text-left text-center'>
+                <div className='mx-3 my-8 '>
                     <div className='flex mb-8'>
                         <img 
                             className='md:w-36 w-24 rounded-full'
