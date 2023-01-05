@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return ( 
         <>
-            <nav className='md:py-6 py-4 top-0 left-0 sticky duration-500'>
+            <nav className='md:py-6 py-4 top-0 left-0 sticky duration-500 scroll-m-0'>
                 <div className="navbar justify-between items-center " >
                     <div className='flex items-center justify-between'>
                         <Link to='/' className='md:text-3xl text-2xl uppercase font-semibold '>
@@ -34,6 +34,7 @@ const Navbar = () => {
                             </li>
                         </ul>
 
+                        {/* check the ternary function again */}
                         <button onClick={showMenu} className="md:hidden">
                             {showMenu ? <FaBars /> : !showMenu ? <FaTimes /> :<FaBars />}
                         </button>

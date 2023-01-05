@@ -17,8 +17,9 @@ const Hero = () => {
                                     'Software Development', 
                                     'Graphics Design', 
                                     'CCTV Installation',
-                                    'Networks Installation',
-                                    'Cyber Security Training'
+                                    'Network Installation',
+                                    'Cyber Security',
+                                    'Technical Training'
                                 ]}
                                 loop={Infinity}
                                 cursor

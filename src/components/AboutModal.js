@@ -5,7 +5,7 @@ const AboutModal = ({isOpen, setIsOpen}) => {
 
     return ( 
         <div className="fixed inset-0 lg:px-80 sm:px-8 md:px-16 px-4 md:y-0 py-16 bg-gray-800 bg-opacity-30 flex items-center justify-center backdrop-blur-sm duration-500">
-            <div className=" rounded-lg">
+            <div className=" rounded-lg bg-blue-200">
                 <div className='py-2 px-2 rounded-lg flex items-center justify-end'>
                     <RiCloseCircleFill 
                         onClick={() => setIsOpen(false)}
