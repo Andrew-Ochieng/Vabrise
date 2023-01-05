@@ -2,6 +2,7 @@ import { useState } from "react";
 import AboutImg from "../assets/hero1.png";
 import AboutModal from "../components/AboutModal";
 import CoreValues from "../components/CoreValues";
+import { motion } from "framer-motion";
 
 const About = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -31,12 +32,20 @@ const About = () => {
                             We exist to change the software engineering, design & cyber security landscape in Africa.
                         </p>
                         <div className="flex md:justify-start justify-center items-center">
-                            <button 
+                            <motion.button 
+                                initial={{x: '100vw'}}
+                                animate={{x: 0}}
+                                transition={{type: 'spring', delay: 0.2, stiffness: 50, duration: 500}}
+                                whileHover={{
+                                    scale: 1.1,
+                                    textShadow: "0px 0px 8px rgb(255,255,255)",
+                                    boxShadow: "0px 0px 8px rgb(255,255,255)",
+                                  }}    
                                 onClick={() => setIsOpen(true)} 
                                 className="px-4 py-3 bg-green-500 text-white font-medium rounded-lg mt-4"
                                 >
                                 The Back Story
-                            </button>
+                            </motion.button>
                         </div>
                     </div>
                     <AboutModal isOpen={isOpen} setIsOpen={setIsOpen} />

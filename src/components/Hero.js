@@ -1,10 +1,15 @@
 import { Typewriter } from "react-simple-typewriter";
 import heroImg from "../assets/hero.png"
+import { motion } from "framer-motion";
 
 const Hero = () => {
     return ( 
         <>
-            <div className="md:flex justify-between lg:my-32 md:my-16 my-8">
+            <motion.div 
+                initial={{x: '100vw'}}
+                animate={{x: -10}}
+                transition={{type: 'spring', dalay: 0.2, stiffness: 150}}
+                className="md:flex justify-between lg:my-32 md:my-16 my-8">
                 <div>
                     <h3 className="uppercase font-medium md:text-lg text-lg text-gray-600">
                         We Manage. You Grow
@@ -40,7 +45,7 @@ const Hero = () => {
                     <img src={heroImg} alt="Hero section" />
                 {/* </div> */}
                 
-            </div>
+            </motion.div>
         </>
      );
 }
