@@ -25,7 +25,7 @@ const Footer = () => {
                     <div className="md:my-0 my-2">
                         <ul className="flex justify-center items-center md:text-lg text-blue-700 font-light">
                             {links.map((link) => (
-                                <li className='md:mx-8 mx-4 md:my-0 my-2'>
+                                <li key={link.link} className='md:mx-8 mx-4 md:my-0 my-2'>
                                     <Link to={link.link}>{link.name}</Link>
                                 </li>
                             ))}

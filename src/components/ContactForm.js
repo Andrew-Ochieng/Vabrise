@@ -1,8 +1,9 @@
 const ContactForm = () => {
+    // const 
     const handleForm = (e) => {
         e.preventDefault();
 
-        console.log("form submitted successfully!")
+        alert("form submitted successfully!")
 
     }
     return ( 

@@ -16,7 +16,7 @@ function App() {
   // console.log(blogs)
   
   return (
-    <div className="App bg-blue-100 lg:mx-64 md:mx-40 mx-8">
+    <div className="App  lg:mx-64 md:mx-40 mx-8">
       <BrowserRouter>
         <Navbar />
           <Routes>

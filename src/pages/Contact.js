@@ -11,15 +11,15 @@ const Contact = () => {
                     <div class="flex flex-col my-8 md:text-2xl text-center text-2xl text-gray-700 space-y-8 ">
                         <div class="flex flex-col justify-center items-center rounded-lg bg-blue-300 p-8 shadow-lg hover:shadow-xl">
                             <FaPhoneAlt />
-                            <p class="md:ml-4 ml-2 md:text-xl text-lg">0799874578/ 0710815080</p>
+                            <p class="md:ml-4 ml-2 mt-4 md:text-xl text-lg">0799874578/ 0710815080</p>
                         </div>
                         <div class="flex flex-col justify-center items-center rounded-lg bg-blue-300 p-8 shadow-lg hover:shadow-xl">
                             <MdLocationOn />
-                            <p class="md:ml-4 ml-2 md:text-xl text-lg">Nairobi, Kenya</p>
+                            <p class="md:ml-4 ml-2 mt-4 md:text-xl text-lg">Nairobi, Kenya</p>
                         </div>
                         <div class="flex flex-col justify-center items-center rounded-lg bg-blue-300 p-8 shadow-lg hover:shadow-xl">
                             <HiOutlineMail />
-                            <p class="md:ml-4 ml-2 md:text-xl text-lg">info@vabrise.com</p>
+                            <p class="md:ml-4 ml-2 mt-4 md:text-xl text-lg">info@vabrise.com</p>
                         </div>
                     </div>
                 </div>
