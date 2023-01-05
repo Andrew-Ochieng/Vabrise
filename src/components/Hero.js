@@ -6,9 +6,9 @@ const Hero = () => {
     return ( 
         <>
             <motion.div 
-                initial={{x: '100vw'}}
-                animate={{x: -10}}
-                transition={{type: 'spring', dalay: 0.2, stiffness: 150}}
+                initial={{y: '-100vw'}}
+                animate={{y: 10}}
+                transition={{type: 'spring', dalay: 0.2, stiffness: 80}}
                 className="md:flex justify-between lg:my-32 md:my-16 my-8">
                 <div>
                     <h3 className="uppercase font-medium md:text-lg text-lg text-gray-600">
