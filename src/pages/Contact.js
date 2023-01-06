@@ -1,6 +1,6 @@
 import ContactForm from "../components/ContactForm";
 import ContactDetailsCard from "../components/ContactDetailsCard";
-
+import { motion } from "framer-motion";
 const Contact = () => {
     return ( 
         <>
@@ -10,14 +10,22 @@ const Contact = () => {
             </div>
             <div className="md:flex justify-around md:my-16 my-8 md:pb-24 pb-0">
                 <div>
-                    <div class="flex flex-col my-8 md:text-2xl text-center text-2xl text-gray-700 space-y-8 ">
+                    <motion.div 
+                        initial={{x: "-100vw", opacity: 0}}
+                        animate={{x: 0, opacity: 1}}
+                        transition={{type: "spring", delay: 0.2, stiffness: 50}}
+                        class="flex flex-col my-8 md:text-2xl text-center text-2xl text-gray-700 space-y-8 ">
                         <ContactDetailsCard />
-                    </div>
+                    </motion.div>
                 </div>
 
-                <div className="md:mb-0 mb-16">
+                <motion.div
+                    initial={{x: "100vw", opacity: 0}}
+                    animate={{x: 0, opacity: 1}}
+                    transition={{type: "spring", delay: 0.4, stiffness: 50}}
+                    className="md:mb-0 mb-16">
                     <ContactForm />
-                </div>
+                </motion.div>
                 
             </div>
 

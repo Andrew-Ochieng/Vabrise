@@ -1,14 +1,11 @@
 import { Link } from "react-router-dom";
-import {  useRef } from "react";
-import { FaBars } from "react-icons/fa"
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa"
 import logo from "../assets/logo.png"
 
 const Navbar = () => {
-    const menuRef = useRef()
 
-    const showMenu = () => {
-        menuRef.current.classList.toggle("hidden")
-    }
+    const [open, setOpen] = useState(false)
 
     return ( 
         <>
@@ -19,12 +16,12 @@ const Navbar = () => {
                             <img className="md:w-32 w-28" src={logo} alt="Logo.." />
                         </Link>
                         
-                        <button onClick={showMenu} className="md:hidden">
-                            <FaBars/>
+                        <button onClick={() => setOpen((prev) => !prev)} className="md:hidden text-xl text-gray-800">
+                            {open ? <FaTimes/> : <FaBars/>}
                         </button>
                     </div>
                     
-                    <div ref={menuRef} className='md:flex hidden'>
+                    <div className={`${open ? "block" : "hidden"} md:flex`}>
                         <ul className="md:flex items-center md:text-lg font-medium">
                             <li className='md:mx-8 md:my-0 my-4'>
                                 <Link to='/'>Home</Link>
