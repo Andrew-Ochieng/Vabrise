@@ -19,7 +19,7 @@ const Hero = () => {
                         <span className="underline underline-offset-4 cursor-pointer hover:text-gray-800 text-yellow-400 md:mx-2 mx-1">solution</span> 
                         <br /> to all your 
                         <span className="underline underline-offset-4 cursor-pointer hover:text-gray-800 text-green-500 md:mx-2 mx-1">tech</span> 
-                        <br />needs such as <br /> 
+                        <br />needs like... <br /> 
                         <span className="text-blue-500 font-semibold ">
                             <Typewriter
                                 words={[
