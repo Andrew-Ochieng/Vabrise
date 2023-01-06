@@ -1,6 +1,7 @@
 import IntegrityImg from "../assets/collaboration.png"
 import ExcellenceImg from "../assets/excellence.png"
 import CollaborationImg from "../assets/handshake.png"
+import { Fade } from "react-reveal"
 
 const CoreValues = ({title}) => {
     const cardDetails = [
@@ -29,13 +30,15 @@ const CoreValues = ({title}) => {
                     <hr className="border-2 border-green-400 mt-2 md:w-32 w-24"/>
                 </div>
                 <div className="md:flex md:space-x-8 md:mx-32 mx-8">
-                    {cardDetails.map((card) => (
-                        <div key={card.value_title} className="flex flex-col justify-center items-center text-center md:px-1 px-4 my-16" >
-                            <img className="md:w-32 w-28" src={card.image} alt="" />
-                            <h2 className="my-4 md:text-3xl text-2xl font-medium text-green-500">{card.value_title}</h2>
-                            <p>{card.body}</p>
-                        </div>
-                    ))}
+                    <Fade bottom>
+                        {cardDetails.map((card) => (
+                            <div key={card.value_title} className="flex flex-col justify-center items-center text-center md:px-1 px-4 my-16" >
+                                <img className="md:w-32 w-28" src={card.image} alt="" />
+                                <h2 className="my-4 md:text-3xl text-2xl font-medium text-green-500">{card.value_title}</h2>
+                                <p>{card.body}</p>
+                            </div>
+                        ))}
+                    </Fade>
                 </div>
             </div>
         </>
