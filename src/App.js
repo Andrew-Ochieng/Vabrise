@@ -12,17 +12,19 @@ import services from "./data.json"
 function App() {
   
   return (
-    <div className="App  lg:mx-64 md:mx-40 mx-8">
+    <div className="App">
       <BrowserRouter>
         <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/:id" element={<ServiceCard services={services} />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        <Footer />
+          <div className="lg:mx-64 md:mx-40 mx-8">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/:id" element={<ServiceCard services={services} />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

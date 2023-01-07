@@ -7,9 +7,15 @@ const Navbar = () => {
 
     const [open, setOpen] = useState(false)
 
+    const navLinks = [
+        {name: "Home", route: "/"},
+        {name: "About", route: "/about"},
+        {name: "Services", route: "/services"}
+    ]
+
     return ( 
         <>
-            <nav className='md:py-6 py-4 top-0 left-0 sticky z-[100] md:bg-transparent bg-green-500'>
+            <nav className='lg:px-64 md:px-40 px-8 md:py-6 py-4 top-0 left-0 sticky z-[100] bg-green-400 opacity-90'>
                 <div className='md:flex items-center justify-between'>
                     <div className="flex justify-between items-center">
                         <Link to='/' className='md:text-3xl text-2xl uppercase font-semibold '>
@@ -23,17 +29,13 @@ const Navbar = () => {
                     
                     <div className={`${open ? "block" : "hidden"} md:flex`}>
                         <ul className="md:flex items-center md:text-lg font-medium">
+                            {navLinks.map((navLink) => (
+                                <li className='md:mx-8 md:my-0 my-4'>
+                                    <Link to={navLink.route}>{navLink.name}</Link>
+                                </li>
+                            ))}
                             <li className='md:mx-8 md:my-0 my-4'>
-                                <Link to='/'>Home</Link>
-                            </li>
-                            <li className='md:mx-8 md:my-0 my-4'>
-                                <Link to='/about'>About</Link>
-                            </li>
-                            <li className='md:mx-8 md:my-0 my-4'>
-                                <Link to='/services'>Services</Link>
-                            </li>
-                            <li className='md:mx-8 md:my-0 my-4'>
-                                <Link className="bg-green-400 px-4 py-1 hover:bg-green-600 duration-500 rounded-md" to='/contact'>Contact</Link>
+                                <Link className="bg-green-100 px-4 py-1 hover:bg-green-900 hover:text-white duration-500 rounded-md" to='/contact'>Contact</Link>
                             </li>
                         </ul>
                     </div>
