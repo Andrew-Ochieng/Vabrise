@@ -21,7 +21,7 @@ const OurClients = () => {
                     <div className='flex items-center justify-center'>
                         {logos.map((logo) => (
                             <img 
-                                className='md:w-32 w-16 grayscale hover:grayscale-0 md:my-0 my-8 md:mx-8 mx-0' 
+                                className='md:w-32 w-16 grayscale hover:grayscale-0 md:my-0 my-8 md:mx-8 mx-4' 
                                 src={logo.name} 
                                 alt=""
                             />

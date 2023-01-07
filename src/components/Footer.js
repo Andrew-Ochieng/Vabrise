@@ -59,7 +59,7 @@ const Footer = () => {
                         <motion.button 
                             initial={{x: '100vh'}}
                             animate={{x: 0}}
-                            whileHover={{scale: 2}}
+                            whileHover={{scale: 1.2}}
                             onClick={scrollTop} 
                             className="md:text-3xl text-2xl ml-8 text-right text-green-500 hover:text-green-600 shadow-green-600 hover:shadow-green-600 shadow-lg hover:shadow-xl animate-bounce">
                             <BsArrowUpSquareFill />
