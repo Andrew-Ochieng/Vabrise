@@ -59,9 +59,9 @@ const Footer = () => {
                         <motion.button 
                             initial={{x: '100vh'}}
                             animate={{x: 0}}
-                            whileHover={{scale: 1.4}}
+                            whileHover={{scale: 2}}
                             onClick={scrollTop} 
-                            className="md:text-3xl text-2xl ml-8 text-right text-green-500 hover:text-green-600 shadow-lg hover:shadow-xl shadow-blue-300 animate-bounce">
+                            className="md:text-3xl text-2xl ml-8 text-right text-green-500 hover:text-green-600 shadow-green-600 hover:shadow-green-600 shadow-lg hover:shadow-xl animate-bounce">
                             <BsArrowUpSquareFill />
                         </motion.button>
                     </div>
@@ -69,10 +69,10 @@ const Footer = () => {
                     
                 </div>
                 <div className="flex justify-center items-center text-sm">
-                    <p>Copyright &copy; <span className="text-blue-700">{newYear}</span> |  
-                            <Link to='/'> 
-                               | Vabrise Technologies
-                            </Link>
+                    <p>Copyright &copy; <span className="text-green-600 font-medium">{newYear}</span> | 
+                        <Link to='/' className="ml-1"> 
+                            Vabrise Technologies
+                        </Link>
                     </p>
                 </div>
             </footer>
