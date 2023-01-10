@@ -19,7 +19,7 @@ const Navbar = () => {
                 <div className='md:flex items-center justify-between'>
                     <div className="flex justify-between items-center">
                         <Link to='/' className='md:text-3xl text-2xl uppercase font-semibold '>
-                            <img className="md:w-32 w-28" src={logo} alt="Logo.." />
+                            <img className="md:w-32 w-28 " src={logo} alt="Logo.." />
                         </Link>
                         
                         <button onClick={() => setOpen((prev) => !prev)} className="md:hidden text-xl text-gray-800">
@@ -35,7 +35,7 @@ const Navbar = () => {
                                 </li>
                             ))}
                             <li className='md:mx-8 md:my-0 my-4'>
-                                <Link className="bg-green-100 px-4 py-1 hover:bg-green-900 hover:text-white duration-500 rounded-md" to='/contact'>Contact</Link>
+                                <Link className="bg-green-100 px-4 py-2 hover:bg-green-900 hover:text-white duration-500 rounded-md" to='/contact'>Contact</Link>
                             </li>
                         </ul>
                     </div>
