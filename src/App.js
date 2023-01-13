@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
-          <div className="lg:mx-64 md:mx-40 mx-8">
+          <div>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />

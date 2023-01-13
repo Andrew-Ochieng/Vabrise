@@ -2,7 +2,7 @@ const Courses = () => {
     const googleLink = 'https://accounts.google.com/v3/signin/identifier?dsh=S-1577003327%3A1673368471043976&authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Fpli%3D1&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession'
     return ( 
         <>
-            <div className="md:mt-16 md:mb-32 my-8 text-center">
+            <div className="md:mt-16 md:mb-32 my-8 text-center lg:mx-64 md:mx-40 mx-8">
                 <div className="flex flex-col items-center justify-center pt-8 pb-4 md:text-3xl text-xl text-gray-800 font-semibold">
                     <h1 >Courses</h1>
                     <hr className="border-2 border-green-400 mt-2 md:w-32 w-24"/>

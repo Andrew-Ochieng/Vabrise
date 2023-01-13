@@ -35,7 +35,7 @@ const Navbar = () => {
                                 </li>
                             ))}
                             <li className='md:mx-8 md:my-0 my-4'>
-                                <Link className="bg-green-100 px-4 py-2 hover:bg-green-900 hover:text-white duration-500 rounded-md" to='/contact'>Contact</Link>
+                                <Link className="bg-green-100 px-4 py-2 hover:bg-green-700 hover:text-white duration-500 rounded-md" to='/contact'>Contact</Link>
                             </li>
                         </ul>
                     </div>

@@ -11,7 +11,7 @@ const About = () => {
 
     return ( 
         <>
-            <div className="h-full">
+            <div className="h-full lg:mx-64 md:mx-40 mx-8">
                 <div className="flex flex-col items-center justify-center pt-8 pb-4 md:text-3xl text-xl text-gray-800 font-semibold">
                     <h1 >About Us</h1>
                     <hr className="border-2 border-green-400 mt-2 md:w-32 w-24"/>

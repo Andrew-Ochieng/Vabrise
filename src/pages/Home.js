@@ -6,9 +6,12 @@ const Home = () => {
 
     return ( 
         <>
-            <Hero />
-            <OurWork />
-            <OurClients />
+        
+            <div className="lg:mx-64 md:mx-40 mx-8">
+                <Hero />
+                <OurWork />
+                <OurClients />
+            </div>
 
         </>
      );

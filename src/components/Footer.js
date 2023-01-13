@@ -12,9 +12,9 @@ const Footer = () => {
     }
 
     let links = [
+        {name: "Courses", link: "/courses"},
         {name: "About", link: "/about"},
         {name: "Services", link: "/services"},
-        {name: "Blog", link: "/blog"},
         {name: "Contact", link: "/contact"}
     ]
 
