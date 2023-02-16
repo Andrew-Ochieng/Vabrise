@@ -6,17 +6,17 @@ import { Slide } from "react-reveal";
 const Hero = () => {
     return ( 
         <>
-            <div className="md:flex justify-between lg:my-32 md:my-16 my-8">
+            <div className="md:flex justify-between items-center lg:my-32 md:my-16 my-8">
                 <div>
                     <Slide left>
-                        <h3 className="uppercase font-medium md:text-lg text-lg text-gray-600">
+                        <h3 className="uppercase font-medium md:text-lg text-base text-gray-600">
                             We Manage. You Grow
                         </h3>
-                        <h1 className="md:my-6 my-4 md:text-5xl text-2xl font-bold text-gray-800 md:leading-tight tracking-wide ">
-                            A <span className="underline underline-offset-4 cursor-pointer hover:text-gray-800 text-blue-500 md:mx-2 mx-1">Complete</span> 
-                            <span className="underline underline-offset-4 cursor-pointer hover:text-gray-800 text-yellow-400 md:mx-2 mx-1">solution</span> 
+                        <h1 className="md:my-6 my-4 lg:text-5xl md:text-3xl text-2xl font-bold text-gray-800 md:leading-tight tracking-wide ">
+                            A <span className="underline underline-offset-4 cursor-pointer text-blue-500 md:mx-2 mx-1">Complete</span> 
+                            <span className="underline underline-offset-4 cursor-pointer text-yellow-400 md:mx-2 mx-1">solution</span> 
                             <br /> to all your 
-                            <span className="underline underline-offset-4 cursor-pointer hover:text-gray-800 text-green-500 md:mx-2 mx-1">tech</span> 
+                            <span className="underline underline-offset-4 cursor-pointer text-green-400 md:mx-2 mx-1">tech</span> 
                             <br />needs like... <br /> 
                             <span className="text-blue-500 font-semibold ">
                                 <Typewriter

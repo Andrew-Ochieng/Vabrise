@@ -20,14 +20,14 @@ const Footer = () => {
 
     return ( 
         <>
-            <footer className="mb-8 lg:mx-64 md:mx-40 mx-8">
-                <div className="md:flex md:justify-between justify-center items-center  text-center mb-8 md:text-base text-sm">
+            <footer className="lg:mx-48 md:mx-32 mx-8 md:mb-16 mb-8">
+                <div className="md:flex md:justify-between justify-center items-center md:text-base text-sm text-center mb-8">
                     <div>
-                        <h1 className="md:text-lg font-medium text-gray-800">Vabrise Technologies</h1>
+                        <h1 className="font-medium text-gray-800">Vabrise Technologies</h1>
                     </div>
 
                     <div className="md:my-0 my-2">
-                        <ul className="flex justify-center items-center md:text-lg text-blue-700 font-light">
+                        <ul className="flex justify-center items-center text-blue-700 font-light">
                             {links.map((link) => (
                                 <li key={link.link} className='md:mx-8 mx-4 md:my-0 my-2'>
                                     <Link to={link.link}>{link.name}</Link>

@@ -7,7 +7,7 @@ const Home = () => {
     return ( 
         <>
         
-            <div className="lg:mx-64 md:mx-40 mx-8">
+            <div className="lg:px-48 md:px-32 px-8">
                 <Hero />
                 <OurWork />
                 <OurClients />
