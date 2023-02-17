@@ -14,3 +14,12 @@ body {
 body {
   background-color: rgb(219, 234, 254 );
 }
+
+
+.card {
+  @apply hover:translate-y-1 hover:scale-105 hover:duration-300 shadow-lg hover:shadow-xl hover:cursor-pointer py-3 px-2 rounded-lg flex flex-col items-center
+}
+
+.card-item {
+  @apply flex flex-col justify-center items-center
+}

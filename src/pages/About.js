@@ -1,17 +1,15 @@
 import { useState } from "react";
 import AboutImg from "../assets/hero1.png";
-import AboutModal from "../components/AboutModal";
 import CoreValues from "../components/CoreValues";
 // import { motion } from "framer-motion";
 import { Fade, Zoom } from "react-reveal";
 
 const About = () => {
-    const [isOpen, setIsOpen] = useState(false)
 
 
     return ( 
         <>
-            <div className="h-full lg:px-48 md:px-32 px-8">
+            <div className="h-full lg:mx-48 md:mx-32 mx-8">
                 <div className="flex flex-col items-center justify-center pt-8 pb-4 md:text-3xl text-xl text-gray-800 font-semibold">
                     <h1 >About Us</h1>
                     <hr className="border-2 border-green-400 mt-2 md:w-32 w-24"/>
@@ -35,17 +33,8 @@ const About = () => {
                                 Our key purpose is to equip the next generation of young engineers with skills that will write a new story of Africa. 
                                 We exist to change the software engineering, design & cyber security landscape in Africa.
                             </p>
-                            <div className="flex md:justify-start justify-center items-center">
-                                <button     
-                                    onClick={() => setIsOpen(true)} 
-                                    className="px-4 py-3 bg-green-500 text-white font-medium rounded-lg mt-4"
-                                    >
-                                    The Back Story
-                                </button>
-                            </div>
                         </Fade>
                     </div>
-                    <AboutModal isOpen={isOpen} setIsOpen={setIsOpen} />
                 </div>
                 
                 <CoreValues className='min-h-screen' title="Core Values" />

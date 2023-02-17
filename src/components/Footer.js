@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { BsGithub, BsInstagram, BsTwitter, BsLinkedin, BsFacebook, BsArrowUpSquareFill } from "react-icons/bs"
+import { BsGithub, BsTwitter, BsLinkedin, BsFacebook, BsArrowUpSquareFill } from "react-icons/bs"
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -21,7 +21,7 @@ const Footer = () => {
     return ( 
         <>
             <footer className="lg:mx-48 md:mx-32 mx-8 md:mb-16 mb-8">
-                <div className="md:flex md:justify-between justify-center items-center md:text-base text-sm text-center mb-8">
+                <div className="md:flex md:justify-between justify-center items-center  text-sm text-center mb-8">
                     <div>
                         <h1 className="font-medium text-gray-800">Vabrise Technologies</h1>
                     </div>
@@ -29,7 +29,7 @@ const Footer = () => {
                     <div className="md:my-0 my-2">
                         <ul className="flex justify-center items-center text-blue-700 font-light">
                             {links.map((link) => (
-                                <li key={link.link} className='md:mx-8 mx-4 md:my-0 my-2'>
+                                <li key={link.link} className='md:mx-8 mx-2 md:my-0 my-2 text-sm'>
                                     <Link to={link.link}>{link.name}</Link>
                                 </li>
                             ))}
@@ -45,9 +45,6 @@ const Footer = () => {
                                 <BsFacebook />
                             </Link>
                             <Link to='/'  className="mx-2">
-                                <BsInstagram />
-                            </Link>
-                            <Link to='/'  className="mx-2">
                                 <BsTwitter />
                             </Link>
                             <Link to='/'  className="mx-2">
@@ -56,14 +53,14 @@ const Footer = () => {
                         </div>
 
                         {/* scroll to top */}
-                        <motion.button 
+                        <motion.div 
                             initial={{x: '100vh'}}
                             animate={{x: 0}}
                             whileHover={{scale: 1.2}}
                             onClick={scrollTop} 
-                            className="md:text-3xl text-2xl ml-8 text-right text-green-500 hover:text-green-600 shadow-green-600 hover:shadow-green-600 shadow-lg hover:shadow-xl animate-bounce">
+                            className="md:text-2xl text-xl ml-6 text-right text-green-500 hover:text-green-600 shadow-green-600 hover:shadow-green-600 shadow-lg hover:shadow-xl animate-bounce rounded-full">
                             <BsArrowUpSquareFill />
-                        </motion.button>
+                        </motion.div>
                     </div>
 
                     
