@@ -9,7 +9,7 @@ const Team = () => {
     ]
     return ( 
         <>
-            <div className="flex flex-col items-center justify-center pt-8 pb-4 md:text-3xl text-xl text-gray-800 font-semibold">
+            <div className="title-container">
                 <h1 >Our Team</h1>
                 <hr className="border-2 border-green-400 mt-2 md:w-36 w-24"/>
             </div>

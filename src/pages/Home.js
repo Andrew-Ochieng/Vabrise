@@ -16,8 +16,8 @@ const Home = () => {
                 <Team />
                 <OurClients />
                 <div className="md:my-32 my-16 md:flex flex-col items-center justify-center">
-                <div className="flex flex-col items-center justify-center pt-8 pb-4 md:text-3xl text-xl text-gray-800 font-semibold">
-                    <h1 >Contact Us</h1>
+                    <div className="title-container">
+                        <h1 >Contact Us</h1>
                         <hr className="title-underline"/>
                     </div>
                     <ContactForm />
