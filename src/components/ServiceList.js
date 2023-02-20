@@ -15,7 +15,7 @@ const ServiceList = () => {
                             transition={{type: 'spring', stiffness: 120}}
                             className="" 
                             key={service.id}>
-                            <img className='w-full h-full' src={service.path} alt="services" className="w-full rounded-md"/>
+                            <img className='w-full h-full' src={service.path} alt="services" />
                             <div>
                                 <h1 className="md:text-2xl text-xl font-semibold text-gray-800 pt-4">{service.title}</h1>
                                 <p className="md:text-base text-sm pt-2">{service.content.split(/\s+/).slice(0, 30).join(" ")}</p>
