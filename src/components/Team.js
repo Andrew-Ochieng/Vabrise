@@ -4,7 +4,7 @@ import cto from "../assets/CTO.jpg"
 
 const Team = () => {
     const teams = [
-        {id: 1, image: ceo, name: "Chris Khayere", position: "Founder & CEO", linkedin: "hello", icon: <BsLinkedin />},
+        {id: 1, image: ceo, name: "Chris Khayere", position: "Founder & CEO", linkedin: "https://www.linkedin.com/in/chris-khayere", icon: <BsLinkedin />},
         {id: 2, image: cto, name: "Andrew Ochieng", position: "Co-Founder & CTO", linkedin: "https://www.linkedin.com/in/andrew-ochieng-00b076180/", icon: <BsLinkedin />}
     ]
     return ( 

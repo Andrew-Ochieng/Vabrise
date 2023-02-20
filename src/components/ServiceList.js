@@ -1,5 +1,4 @@
 import services from "../data.json"
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Fade } from "react-reveal";
 
@@ -14,13 +13,13 @@ const ServiceList = () => {
                             whileInView={{ opacity: 1 }}
                             whileHover={{  y: -20 }}
                             transition={{type: 'spring', stiffness: 120}}
-                            className="hover:text-green-500" 
+                            className="" 
                             key={service.id}>
                             <img src={service.path} alt="services" className="w-full rounded-md"/>
-                            <Link to={`/${service.id}`}>
-                                <h1 className="md:text-3xl text-xl font-semibold text-gray-800 pt-4">{service.title}</h1>
-                                <p className="md:text-lg pt-2">{service.content.split(/\s+/).slice(0, 20).join(" ")}</p>
-                            </Link>
+                            <div>
+                                <h1 className="md:text-2xl text-xl font-semibold text-gray-800 pt-4">{service.title}</h1>
+                                <p className="md:text-base text-sm pt-2">{service.content.split(/\s+/).slice(0, 20).join(" ")}</p>
+                            </div>
                         
                         </motion.div>
                     ))}
