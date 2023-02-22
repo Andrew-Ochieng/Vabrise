@@ -29,12 +29,12 @@ const CoreValues = ({title}) => {
                     <h1 >{title}</h1>
                     <hr className="border-2 border-green-400 mt-2 md:w-32 w-24"/>
                 </div>
-                <div className="md:flex md:space-x-8 md:mx-32 mx-8">
+                <div className="md:flex items-center justify-center md:space-x-8 md:mx-32 mx-8">
                     <Fade bottom>
                         {cardDetails.map((card) => (
-                            <div key={card.value_title} className="flex flex-col justify-center items-center text-center md:px-1 px-4 my-16" >
+                            <div key={card.value_title} className="flex flex-col justify-center items-center text-center md:px-1 px-4 my-10" >
                                 <img className="md:w-32 w-28" src={card.image} alt="" />
-                                <h2 className="my-4 md:text-3xl text-2xl font-medium text-green-500">{card.value_title}</h2>
+                                <h2 className="my-3 md:text-3xl text-2xl font-medium text-green-500">{card.value_title}</h2>
                                 <p>{card.body}</p>
                             </div>
                         ))}

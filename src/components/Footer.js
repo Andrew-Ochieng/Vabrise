@@ -21,7 +21,7 @@ const Footer = () => {
     return ( 
         <>
             <footer className="lg:mx-48 md:mx-32 mx-8 md:mb-16 mb-8">
-                <div className="md:flex md:justify-between justify-center items-center  text-sm text-center mb-8">
+                <div className="md:flex md:justify-between justify-center items-center text-sm text-center mb-8">
                     <div>
                         <h1 className="font-medium text-gray-800">Vabrise Technologies</h1>
                     </div>
@@ -58,14 +58,14 @@ const Footer = () => {
                             animate={{x: 0}}
                             whileHover={{scale: 1.2}}
                             onClick={scrollTop} 
-                            className="md:text-2xl text-xl ml-6 text-right text-green-500 hover:text-green-600 shadow-green-600 hover:shadow-green-600 shadow-lg hover:shadow-xl animate-bounce rounded-full">
+                            className="cursor-pointer md:text-2xl text-xl ml-6 text-right text-green-500 hover:text-green-600 shadow-green-600 hover:shadow-green-600 shadow-lg hover:shadow-xl animate-bounce rounded-full">
                             <BsArrowUpSquareFill />
                         </motion.div>
                     </div>
 
                     
                 </div>
-                <div className="flex justify-center items-center text-sm">
+                <div className="flex justify-center items-center text-center text-sm">
                     <p>Copyright &copy; <span className="text-green-600 font-medium">{newYear}</span> | 
                         <Link to='/' className="ml-1"> 
                             Vabrise Technologies

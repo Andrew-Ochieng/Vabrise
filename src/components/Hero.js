@@ -13,12 +13,12 @@ const Hero = () => {
                             We Manage. You Grow
                         </h3>
                         <h1 className="md:my-6 my-4 lg:text-5xl md:text-3xl text-2xl font-bold text-gray-800 md:leading-tight tracking-wide ">
-                            A <span className="underline underline-offset-4 cursor-pointer text-blue-500 md:mx-2 mx-1">Complete</span> 
+                            A <span className="underline underline-offset-4 cursor-pointer text-sky-500 md:mx-2 mx-1">Complete</span> 
                             <span className="underline underline-offset-4 cursor-pointer text-yellow-400 md:mx-2 mx-1">solution</span> 
                             <br /> to all your 
                             <span className="underline underline-offset-4 cursor-pointer text-green-400 md:mx-2 mx-1">tech</span> 
                             <br />needs like... <br /> 
-                            <span className="text-blue-500 font-semibold ">
+                            <span className="text-sky-500 font-semibold ">
                                 <Typewriter
                                     words={[
                                         'Software Development', 

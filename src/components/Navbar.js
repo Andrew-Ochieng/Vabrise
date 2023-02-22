@@ -12,10 +12,11 @@ const Navbar = () => {
         {name: "Services", route: "/services"},
         {name: "Courses", route: "/courses"}
     ]
+    
 
     return ( 
         <>
-            <nav className='lg:px-48 md:px-32 px-8 md:py-6 py-4 top-0 left-0 sticky z-[100] bg-green-300 opacity-100 shadow-xl'>
+            <nav className='lg:px-48 md:px-32 px-8 md:py-6 py-4 top-0 left-0 sticky z-[100] bg-sky-300 opacity-100 shadow-xl'>
                 <div className='md:flex items-center justify-between'>
                     <div className="flex justify-between items-center">
                         <Link to='/' className='md:text-3xl text-2xl uppercase font-semibold '>
@@ -23,11 +24,11 @@ const Navbar = () => {
                         </Link>
                         
                         <button onClick={() => setOpen((prev) => !prev)} className="md:hidden text-xl text-gray-800">
-                            {open ? <FaTimes/> : <FaBars/>}
+                            <FaBars/>
                         </button>
                     </div>
                     
-                    <div className={`${open ? "block" : "hidden"} md:flex text-gray-700`}>
+                    <div className='md:flex hidden text-gray-700'>
                         <ul className="md:flex items-center md:text-lg font-medium">
                             {navLinks.map((navLink) => (
                                 <li className='md:mx-4 md:my-0 my-4'>
@@ -35,10 +36,26 @@ const Navbar = () => {
                                 </li>
                             ))}
                             <li className='md:mx-8 md:my-0 my-4'>
-                                <Link className="bg-white px-4 py-2 hover:bg-sky-300 hover:text-white duration-500 rounded-md" to='/contact'>Contact</Link>
+                                <Link className="bg-white px-4 py-2 hover:bg-green-300 hover:text-white duration-500 rounded-md" to='/contact'>Contact</Link>
                             </li>
                         </ul>
                     </div>
+                </div>
+
+                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0 flex flex-col items-end space-y-8 py-6 px-8 text-right w-full h-screen duration-300 ease-in-out bg-sky-400/90    `}>
+                    <button onClick={() => setOpen((prev) => !prev)} className="mb-8 sm:hidden text-2xl text-gray-100 ">
+                            <FaTimes/> 
+                    </button> 
+                    <ul className="md:flex items-center text-sm font-medium">
+                        {navLinks.map((navLink) => (
+                            <li onClick={() => setOpen((prev) => !prev)} className='md:mx-4 md:my-0 my-4'>
+                                <Link to={navLink.route}>{navLink.name}</Link>
+                            </li>
+                        ))}
+                        <li className='md:mx-8 md:my-0 my-4'>
+                            <Link className="bg-white px-3 py-1 hover:bg-green-400 hover:text-white duration-500 rounded-md" to='/contact'>Contact</Link>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </>
