@@ -25,9 +25,13 @@ body {
 }
 
 .title-underline {
-  @apply border-2 border-green-400 mt-2 md:w-36 w-24
+  @apply border-2 border-sky-600 mt-2 md:w-36 w-24 rounded-full
 }
 
 .title-container {
   @apply flex flex-col items-center justify-center pt-8 pb-4 md:text-3xl text-xl text-gray-800 font-semibold
+}
+
+.input {
+  @apply p-3 bg-gray-100 rounded-lg w-full focus-within:border-sky-400 outline-none
 }

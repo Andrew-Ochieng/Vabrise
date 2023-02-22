@@ -15,7 +15,7 @@ const ContactDetailsCard = () => {
                 <motion.div 
                     whileHover={{y: -12, scale: 1.04}}
                     transition={{type: 'spring', stiffness: 80}}
-                    class="flex flex-col justify-center items-center rounded-lg bg-blue-300 hover:bg-blue-400 hover:text-white ease-out duration-300 p-8 shadow-lg hover:shadow-xl">
+                    class="flex flex-col justify-center items-center rounded-lg bg-blue-300 hover:bg-blue-400 hover:text-white ease-out duration-300 p-6 shadow-lg hover:shadow-xl">
                     {info.icon}
                     <p class="md:ml-4 ml-2 mt-2 md:text-xl text-lg">{info.details}</p>
                 </motion.div>

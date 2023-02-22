@@ -11,18 +11,18 @@ const Team = () => {
         <>
             <div className="title-container">
                 <h1 >Our Team</h1>
-                <hr className="border-2 border-green-400 mt-2 md:w-36 w-24"/>
+                <hr className="title-underline"/>
             </div>
             <div className="sm:flex justify-center items-center gap-8 md:mt-8 mt-4 md:mb-32 mb-16">
                 {teams.map((team) => (
-                    <div key={team.id} className='card md:my-0 my-6 bg-blue-100'>
+                    <div key={team.id} className='card md:my-0 my-6 bg-sky-100'>
                         <div className="sm:w-48 sm:h-48">
                             <img src={team.image} alt='team-image' className="w-full rounded-md"/>
                         </div>
                         <div className=" m-4 card-item">
                             <h3 className="text-blue-500 font-light">{team.name}</h3>
                             <p className="text-sm my-1 font-bold text-gray-800">{team.position}</p>
-                            <a href={team.linkedin} className='text-blue-500 md:text-2xl text-lg'>
+                            <a href={team.linkedin} className='text-sky-500 md:text-2xl text-lg'>
                                 {team.icon}
                             </a>
                         </div>

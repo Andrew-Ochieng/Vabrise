@@ -9,13 +9,13 @@ const Contact = () => {
                     <h1 >Reach Out</h1>
                     <hr className="title-underline"/>
                 </div>
-                <div className="md:flex justify-around md:my-16 my-8 md:pb-24 pb-0">
+                <div className="md:flex justify-around items-center md:my-16 my-8 md:pb-24 pb-0">
                     <div>
                         <motion.div 
                             initial={{x: "-100vw", opacity: 0}}
                             animate={{x: 0, opacity: 1}}
                             transition={{type: "spring", delay: 0.2, stiffness: 50}}
-                            class="flex flex-col my-8 md:text-2xl text-center text-2xl text-gray-700 space-y-8 ">
+                            class="flex flex-col md:my-0 my-8 md:text-2xl text-center text-2xl text-gray-700 space-y-8 ">
                             <ContactDetailsCard />
                         </motion.div>
                     </div>

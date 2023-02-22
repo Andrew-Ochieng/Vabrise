@@ -31,12 +31,12 @@ const Navbar = () => {
                     <div className='md:flex hidden text-gray-700'>
                         <ul className="md:flex items-center md:text-lg font-medium">
                             {navLinks.map((navLink) => (
-                                <li className='md:mx-4 md:my-0 my-4'>
+                                <li className='md:mx-4 md:my-0 my-4 hover:text-white'>
                                     <Link to={navLink.route}>{navLink.name}</Link>
                                 </li>
                             ))}
                             <li className='md:mx-8 md:my-0 my-4'>
-                                <Link className="bg-white px-4 py-2 hover:bg-green-300 hover:text-white duration-500 rounded-md" to='/contact'>Contact</Link>
+                                <Link className="bg-white px-4 py-2 hover:bg-sky-800 hover:text-white duration-500 rounded-md" to='/contact'>Contact</Link>
                             </li>
                         </ul>
                     </div>
@@ -46,14 +46,14 @@ const Navbar = () => {
                     <button onClick={() => setOpen((prev) => !prev)} className="mb-8 sm:hidden text-2xl text-gray-100 ">
                             <FaTimes/> 
                     </button> 
-                    <ul className="md:flex items-center text-sm font-medium">
+                    <ul className="md:flex items-center text-base font-medium">
                         {navLinks.map((navLink) => (
-                            <li onClick={() => setOpen((prev) => !prev)} className='md:mx-4 md:my-0 my-4'>
+                            <li onClick={() => setOpen((prev) => !prev)} className='md:mx-4 md:my-0 my-6 hover:text-white'>
                                 <Link to={navLink.route}>{navLink.name}</Link>
                             </li>
                         ))}
                         <li className='md:mx-8 md:my-0 my-4'>
-                            <Link className="bg-white px-3 py-1 hover:bg-green-400 hover:text-white duration-500 rounded-md" to='/contact'>Contact</Link>
+                            <Link className="bg-white px-3 py-1 hover:bg-sky-800 hover:text-white duration-500 rounded-md" to='/contact'>Contact</Link>
                         </li>
                     </ul>
                 </div>

@@ -16,7 +16,7 @@ const OurClients = () => {
         <>
             <div className="title-container">
                 <h1 >Our Clients</h1>
-                <hr className="border-2 border-green-400 mt-2 md:w-32 w-24"/>
+                <hr className="title-underline"/>
             </div>
             <div className='md:mb-32 mb-16 mt-8 flex justify-center items-center'>
                 <Slide bottom>

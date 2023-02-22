@@ -23,11 +23,11 @@ const Footer = () => {
             <footer className="lg:mx-48 md:mx-32 mx-8 md:mb-16 mb-8">
                 <div className="md:flex md:justify-between justify-center items-center text-sm text-center mb-8">
                     <div>
-                        <h1 className="font-medium text-gray-800">Vabrise Technologies</h1>
+                        <h1 className="md:text-base font-medium text-gray-800">Vabrise Technologies</h1>
                     </div>
 
                     <div className="md:my-0 my-2">
-                        <ul className="flex justify-center items-center text-blue-700 font-light">
+                        <ul className="flex justify-center items-center text-sky-700 font-light">
                             {links.map((link) => (
                                 <li key={link.link} className='md:mx-8 mx-2 md:my-0 my-2 text-sm'>
                                     <Link to={link.link}>{link.name}</Link>
@@ -58,7 +58,7 @@ const Footer = () => {
                             animate={{x: 0}}
                             whileHover={{scale: 1.2}}
                             onClick={scrollTop} 
-                            className="cursor-pointer md:text-2xl text-xl ml-6 text-right text-green-500 hover:text-green-600 shadow-green-600 hover:shadow-green-600 shadow-lg hover:shadow-xl animate-bounce rounded-full">
+                            className="cursor-pointer md:text-2xl text-xl ml-6 text-right text-sky-800 shadow-sky-600 hover:shadow-sky-600 shadow-lg hover:shadow-xl animate-bounce rounded-full">
                             <BsArrowUpSquareFill />
                         </motion.div>
                     </div>
@@ -66,7 +66,7 @@ const Footer = () => {
                     
                 </div>
                 <div className="flex justify-center items-center text-center text-sm">
-                    <p>Copyright &copy; <span className="text-green-600 font-medium">{newYear}</span> | 
+                    <p>Copyright &copy; <span className="text-sky-700 font-medium">{newYear}</span> | 
                         <Link to='/' className="ml-1"> 
                             Vabrise Technologies
                         </Link>

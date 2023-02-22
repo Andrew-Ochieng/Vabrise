@@ -40,7 +40,7 @@ const About = () => {
                 <div className="md:mx-40 md:mb-32 mb-16">
                     <div className="flex flex-col items-center justify-center mb-8 md:text-3xl text-xl text-gray-800 font-semibold">
                         <h1>Our Mission</h1>
-                        <hr className="border-2 border-green-400 mt-2 md:w-32 w-24"/>
+                        <hr className="title-underline"/>
                     </div>
                     <Zoom bottom>
                         <p className="md:text-2xl text-lg text-gray-700 font-light text-center md:leading-relaxed tracking-wide">

@@ -12,18 +12,18 @@ const ContactForm = () => {
             <div>
                 <form onSubmit={handleForm} >
                     <div className="my-4">
-                        <input className="p-3 bg-gray-100 rounded-lg w-full" type="text" name="firstname" placeholder="First Name" required />
+                        <input className="input" type="text" name="firstname" placeholder="First Name" required />
                     </div>
                     <div className="my-4">
-                        <input className="p-3 bg-gray-100 rounded-lg w-full" type="text" name="lastname" placeholder="Last Name" required />
+                        <input className="input" type="text" name="lastname" placeholder="Last Name" required />
                     </div>
                     <div className="my-4">
-                        <input className="p-3 bg-gray-100 rounded-lg w-full" type="tel" name="phone" placeholder="Telephone Number.." required />
+                        <input className="input" type="tel" name="phone" placeholder="Telephone Number.." required />
                     </div>
                     <div className="my-4">
-                        <textarea className="px-3 py-2 bg-gray-100 rounded-lg w-full" name="message" placeholder="Message" cols="30" rows="6"></textarea>
+                        <textarea className="input w-full" name="message" placeholder="Message" cols="30" rows="4"></textarea>
                     </div>
-                    <button className="mt-4 px-4 py-3 rounded-lg bg-green-400 w-full">
+                    <button className="mt-4 px-4 py-3 rounded-lg bg-sky-500 w-full">
                         Submit
                     </button>
                 </form>
