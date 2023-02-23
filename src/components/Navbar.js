@@ -10,7 +10,7 @@ const Navbar = () => {
     const navLinks = [
         {name: "About", route: "/about"},
         {name: "Services", route: "/services"},
-        {name: "Courses", route: "/courses"}
+        {name: "Contact", route: "/contact"}
     ]
     
 
@@ -36,24 +36,30 @@ const Navbar = () => {
                                 </li>
                             ))}
                             <li className='md:mx-8 md:my-0 my-4'>
-                                <Link className="bg-white px-4 py-2 hover:bg-sky-800 hover:text-white duration-500 rounded-md" to='/contact'>Contact</Link>
+                                <a target='_blank' className="bg-white px-3 py-1 hover:bg-sky-800 hover:text-white duration-500 rounded-md" href='https://learn.vabrisetech.co.ke/'>
+                                    Courses
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0 flex flex-col items-end space-y-8 py-6 px-8 text-right w-full h-screen duration-300 ease-in-out bg-sky-400/90    `}>
-                    <button onClick={() => setOpen((prev) => !prev)} className="mb-8 sm:hidden text-2xl text-gray-100 ">
-                            <FaTimes/> 
-                    </button> 
-                    <ul className="md:flex items-center text-base font-medium">
+                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0  space-y-8 py-6 px-8 w-full h-screen duration-300 ease-in-out bg-sky-400/95    `}>
+                    <div className="flex justify-end">
+                        <button onClick={() => setOpen((prev) => !prev)} className="mb-8 sm:hidden text-2xl text-gray-100 text-right">
+                                <FaTimes/> 
+                        </button> 
+                    </div>
+                    <ul className="flex flex-col items-center text-center text-base font-medium">
                         {navLinks.map((navLink) => (
-                            <li onClick={() => setOpen((prev) => !prev)} className='md:mx-4 md:my-0 my-6 hover:text-white'>
+                            <li onClick={() => setOpen((prev) => !prev)} className='md:mx-4 md:my-0 my-4 hover:text-white pb-6 w-1/3 border-b-2'>
                                 <Link to={navLink.route}>{navLink.name}</Link>
                             </li>
                         ))}
                         <li className='md:mx-8 md:my-0 my-4'>
-                            <Link className="bg-white px-3 py-1 hover:bg-sky-800 hover:text-white duration-500 rounded-md" to='/contact'>Contact</Link>
+                            <a target='_blank' className="px-3 py-1 hover:text-white duration-500 rounded-md" href='https://learn.vabrisetech.co.ke/'>
+                                Courses
+                            </a>
                         </li>
                     </ul>
                 </div>
