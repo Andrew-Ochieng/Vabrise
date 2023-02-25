@@ -37,7 +37,7 @@ const Navbar = () => {
                             ))}
                             <li className='md:mx-8 md:my-0 my-4'>
                                 <a target='_blank' className="bg-white px-3 py-1 hover:bg-sky-800 hover:text-white duration-500 rounded-md" href='https://learn.vabrisetech.co.ke/'>
-                                    Courses
+                                    Open Learn
                                 </a>
                             </li>
                         </ul>
@@ -58,7 +58,7 @@ const Navbar = () => {
                         ))}
                         <li className='md:mx-8 md:my-0 my-4'>
                             <a target='_blank' className="px-3 py-1 hover:text-white duration-500 rounded-md" href='https://learn.vabrisetech.co.ke/'>
-                                Courses
+                                Open Learn
                             </a>
                         </li>
                     </ul>
